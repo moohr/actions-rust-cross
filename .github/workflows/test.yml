@@ -243,6 +243,16 @@ jobs:
           target: ${{ matrix.platform.target }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: ${{ matrix.platform.can_test }}
+      - name: Run test command with args
+        uses: ./
+        with:
+          command: test
+          cross-version: ${{ matrix.platform.cross-version }}
+          cache-cross-binary: ${{ matrix.platform.cache-cross-binary }}
+          target: ${{ matrix.platform.target }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          args: "-- --ignored"
+        if: ${{ matrix.platform.can_test }}
       - name: Run build command
         uses: ./
         with:

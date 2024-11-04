@@ -1,3 +1,9 @@
+## 0.0.16
+
+- Arguments passed in the `args` parameter are now always last when executing `cargo`. This lets you
+  pass arguments to test binaries like `-- --something`. First reported by @mateocabanal (Mateo
+  Cabanal) as GH #12 and fully fixed by @donatello (Aditya Manthramurthy) in GH #30.
+
 ## 0.0.15 - 2024-09-21
 
 - The `musl` packages are only installed when not cross-compiling.
