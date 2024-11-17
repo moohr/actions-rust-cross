@@ -1,4 +1,4 @@
-## 0.0.16
+## 0.0.16 - 2024-11-17
 
 - Arguments passed in the `args` parameter are now always last when executing `cargo`. This lets you
   pass arguments to test binaries like `-- --something`. First reported by @mateocabanal (Mateo
