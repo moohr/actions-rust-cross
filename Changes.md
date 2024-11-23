@@ -1,4 +1,4 @@
-## 0.0.17
+## 0.0.17 - 2024-11-23
 
 - Added support for running `cargo bench` or `cross bench`. Implemented by @RaulTrombin (Raul Victor
   Trombin). GH #32.
